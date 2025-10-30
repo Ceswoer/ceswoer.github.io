@@ -152,7 +152,8 @@
     <section id="iletisim" style="margin-top:28px">
       <h2>İletişim</h2>
       <p class="muted">Projeler için bize ulaşın: <a href="mailto:hello@ornek.site">hello@ornek.site</a> • LinkedIn/Instagram linkleri ekleyin.</p>
-      <form class="card body" onsubmit="alert('Form backend eklemediniz. Formspree veya FormSubmit gibi ücretsiz servislerle endpoint bağlayın.'); return false;" style="padding:16px;">
+      <form action="https://formsubmit.co/MAILADRESIN" method="POST" class="card body" style="padding:16px;">
+        <input type="hidden" name="_captcha" value="false"
         <div class="row">
           <input required placeholder="Adınız" style="flex:1;min-width:200px;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0f0f16;color:var(--text)" />
           <input required type="email" placeholder="E-posta" style="flex:1;min-width:200px;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0f0f16;color:var(--text)" />
@@ -172,3 +173,4 @@
   </script>
 </body>
 </html>
+
