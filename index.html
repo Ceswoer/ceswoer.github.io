@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Studio ✦ — Portfolyo</title>
+  <meta name="description" content="Ekip portfolyo sitesi: işler, ekip, iletişim." />
+  <style>
+    :root{
+      --bg:#0b0b0f; --card:#13131a; --muted:#a1a1b3; --text:#f5f7ff; --primary:#7c5cff; --accent:#12d6df; --border:#232334;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:radial-gradient(1200px 600px at 70% -10%, rgba(18,214,223,.12), transparent),var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1100px;margin:auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid var(--border)}
+    .nav .brand{display:flex;gap:10px;align-items:center;font-weight:700;letter-spacing:.3px}
+    .nav .brand .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(140deg,var(--primary),var(--accent));box-shadow:0 0 0 2px #0003}
+    .nav .links{display:flex;gap:18px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:12px;border:1px solid var(--border);background:linear-gradient(180deg,#161620,#101018);color:var(--text);box-shadow:0 1px 0 #ffffff10 inset, 0 8px 24px #0006;transition:transform .12s ease, box-shadow .12s ease}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 1px 0 #ffffff10 inset, 0 10px 28px #0008}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:36px 0}
+    .hero h1{font-size:42px;line-height:1.15;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 24px}
+    .tag{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:14px}
+    .grid{display:grid;gap:18px}
+    .projects{grid-template-columns:repeat(3,1fr)}
+    .card{background:linear-gradient(180deg,#161621,#101018);border:1px solid var(--border);border-radius:18px;overflow:hidden}
+    .card .thumb{aspect-ratio:16/10;background:#0f0f14;display:flex;align-items:center;justify-content:center;color:#7f7f9a;font-size:14px}
+    .card .body{padding:14px 16px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .kicker{color:var(--muted);font-size:13px;margin-bottom:4px}
+    .pill{display:inline-block;background:#1a1a25;border:1px solid var(--border);padding:4px 10px;border-radius:999px;font-size:12px;color:var(--muted)}
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    .team{grid-template-columns:repeat(4,1fr)}
+    .avatar{width:56px;height:56px;border-radius:14px;background:linear-gradient(140deg,var(--primary),var(--accent));border:1px solid var(--border)}
+    .member{display:flex;gap:12px;align-items:center;padding:14px;background:linear-gradient(180deg,#161621,#101018);border:1px solid var(--border);border-radius:16px}
+    .member .meta{line-height:1.2}
+    .muted{color:var(--muted)}
+    footer{border-top:1px solid var(--border);margin-top:42px;padding:24px 0;color:var(--muted);font-size:14px}
+    /* Responsive */
+    @media (max-width: 980px){.hero{grid-template-columns:1fr}.projects{grid-template-columns:1fr 1fr}.team{grid-template-columns:1fr 1fr 1fr}}
+    @media (max-width: 640px){.projects{grid-template-columns:1fr}.team{grid-template-columns:1fr 1fr}.hero h1{font-size:34px}}
+  </style>
+</head>
+<body>
+  <header class="container nav" role="navigation">
+    <div class="brand"><div class="logo" aria-hidden="true"></div> Studio ✦</div>
+    <nav class="links">
+      <a href="#projeler">Projeler</a>
+      <a href="#ekip">Ekip</a>
+      <a href="#iletisim">İletişim</a>
+      <a class="btn" href="#" target="_blank" rel="noopener">CV İndir</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="tag">Açık kaynak • Ücretsiz barınır</span>
+        <h1>Web • Mobil • Tasarım — <br/>Ekip portfolyomuz bir arada.</h1>
+        <p>Son projelerimizi, yetkinliklerimizi ve iletişim bilgilerimizi tek sayfada toparladık. Kod tabanlı; GitHub Pages / Netlify / Vercel ile ücretsiz yayınlanır.</p>
+        <div class="row">
+          <span class="pill">React / Vue / SSG</span>
+          <span class="pill">UI/UX</span>
+          <span class="pill">Backend</span>
+          <span class="pill">Oyun</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb">Proje Kapak (16:10 görselinizi ekleyin)</div>
+        <div class="body">
+          <div class="kicker">Vitrin Proje</div>
+          <h3>"Bugy" — Mini Ritim Oyunu</h3>
+          <p class="muted">ESP32 tabanlı input + WebGL canvas ile miksi birleştiren prototip.</p>
+          <div class="row">
+            <span class="pill">JavaScript</span>
+            <span class="pill">WebGL</span>
+            <a class="pill" href="#" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projeler" style="margin-top:18px">
+      <h2>Projeler</h2>
+      <div class="grid projects">
+        <article class="card">
+          <div class="thumb">Kapak görseli</div>
+          <div class="body">
+            <div class="kicker">Uygulama</div>
+            <h3>Area Floors — Üretim Takip</h3>
+            <p class="muted">SPC parke üretimi için hat izleme ve raporlama arayüzü.</p>
+            <div class="row">
+              <span class="pill">Next.js</span>
+              <span class="pill">PostgreSQL</span>
+              <a class="pill" href="#" target="_blank">Canlı Demo</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">Kapak görseli</div>
+          <div class="body">
+            <div class="kicker">Oyun</div>
+            <h3>Parkur — Mobil</h3>
+            <p class="muted">Çocuklar için hızlı oynanışlı parkur deneyimi.</p>
+            <div class="row">
+              <span class="pill">Unity</span>
+              <a class="pill" href="#" target="_blank">Trailer</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb">Kapak görseli</div>
+          <div class="body">
+            <div class="kicker">Web</div>
+            <h3>hakkiarchives — Kişisel</h3>
+            <p class="muted">Minimal, koyu tema, tek sayfa kişisel site.</p>
+            <div class="row">
+              <span class="pill">Vanilla HTML/CSS</span>
+              <a class="pill" href="#" target="_blank">Site</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="ekip" style="margin-top:28px">
+      <h2>Ekip</h2>
+      <div class="grid team">
+        <div class="member">
+          <div class="avatar" aria-hidden="true"></div>
+          <div class="meta"><strong>Hakkı</strong><div class="muted">Frontend • Oyun</div></div>
+        </div>
+        <div class="member">
+          <div class="avatar" aria-hidden="true"></div>
+          <div class="meta"><strong>Arkadaş 2</strong><div class="muted">Backend • DevOps</div></div>
+        </div>
+        <div class="member">
+          <div class="avatar" aria-hidden="true"></div>
+          <div class="meta"><strong>Arkadaş 3</strong><div class="muted">Tasarım • UI</div></div>
+        </div>
+        <div class="member">
+          <div class="avatar" aria-hidden="true"></div>
+          <div class="meta"><strong>Arkadaş 4</strong><div class="muted">Donanım • IoT</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="iletisim" style="margin-top:28px">
+      <h2>İletişim</h2>
+      <p class="muted">Projeler için bize ulaşın: <a href="mailto:hello@ornek.site">hello@ornek.site</a> • LinkedIn/Instagram linkleri ekleyin.</p>
+      <form class="card body" onsubmit="alert('Form backend eklemediniz. Formspree veya FormSubmit gibi ücretsiz servislerle endpoint bağlayın.'); return false;" style="padding:16px;">
+        <div class="row">
+          <input required placeholder="Adınız" style="flex:1;min-width:200px;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0f0f16;color:var(--text)" />
+          <input required type="email" placeholder="E-posta" style="flex:1;min-width:200px;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0f0f16;color:var(--text)" />
+        </div>
+        <textarea required placeholder="Mesajınız" rows="5" style="width:100%;margin-top:10px;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0f0f16;color:var(--text)"></textarea>
+        <button class="btn" type="submit" style="margin-top:10px">Gönder</button>
+      </form>
+    </section>
+
+    <footer>
+      © <span id="yil"></span> Studio ✦ — Tüm hakları saklıdır. • <a href="#">GitHub</a>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('yil').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
